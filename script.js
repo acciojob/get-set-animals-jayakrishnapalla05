@@ -16,6 +16,7 @@ class Dog extends Animal {
 	bark(){
 		console.log("woof");
 	}
+	
 }
 
 class Cat extends Animal {
@@ -24,7 +25,12 @@ class Cat extends Animal {
 		console.log("purr");
 	}
 }
-
+let c = new Cat("black");
+c.makeSound();
+c.purr();
+let d = new Dog("blair");
+d.makeSound();
+d.bark();
 // Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
